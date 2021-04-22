@@ -1,0 +1,48 @@
+import React from 'react';
+import './alert.css';
+
+
+export function Alert(props)
+{
+    return (
+        <div className={`${!props.show ? 'alertHide' : ''} `}>
+            <div className={`alert ${props.position} ${props.color}`}>
+
+                {props.children}
+            </div>
+        </div>
+    )
+}
+
+
+export function AlertHeader(props)
+{
+    return (
+        <div className={`alertHeader ${!!props.className ? props.className : ''}`} >
+            <button className="alertHeaderCancelIcon" 
+                onClick={()=> props.onClick()}>X</button>
+
+            {props.children}
+        </div>
+    )
+}
+
+
+export function AlertBody(props)
+{
+    return (
+        <div className={`alertBody ${!!props.className ? props.className : ''}`}>
+            {props.children}
+        </div>
+    )
+}
+
+
+export function AlertFooter(props)
+{
+    return (
+        <div className={`alertFooter ${!!props.className ? props.className : ''}`}>
+            {props.children}
+        </div>
+    )
+}
