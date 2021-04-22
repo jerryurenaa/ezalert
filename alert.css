@@ -1,0 +1,89 @@
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Nerdtrix LLC 2020
+Coded by @Jerryurenaa
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+
+  
+.alert {
+    border-radius: .2rem;
+    z-index: 999;
+    margin: auto;
+    position: fixed;
+    background-color: white;
+    max-width: 80vw;
+}
+
+.topRight{
+    top: 1rem;
+    right: 1rem;
+}
+
+.topLeft{
+    top: 1rem;
+    left: 1rem;
+}
+
+
+.bottomRight{
+    bottom: 1rem;
+    right: 1rem;
+}
+
+
+.bottomLeft{
+    bottom: 1rem;
+    left: 1rem;
+}
+
+
+.alertGreen{
+    color: #ffffff;
+    background-color: #07b630;
+}
+
+.alertRed{
+    color: #ffffff;
+    background-color: #b60707;
+}
+  
+  
+  .alertHide{
+      display: none;
+  }
+  
+  
+  
+  .alertHeader{
+      text-align: center;
+      padding: 1rem 1rem 0 1rem;
+      font-weight: 600;
+      font-size: 1.5rem;
+  }
+
+  
+  
+  .alertHeaderCancelIcon{
+      padding: .3rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: -10px -10px 0 0;
+      background-color: red;
+      color: white;
+      font-size: .8rem;
+      outline: none;
+  }
+  .alertHeaderCancelIcon:hover{
+      background-color: gray;
+  }
+  
+  .alertBody{
+      overflow-x: auto;
+      margin: 0 .5rem 0 .5rem;
+      padding:  0 10px 15px 10px;
+  }
+  
+  .modalFooter{
+  }
